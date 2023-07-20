@@ -1,0 +1,264 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      table td {
+        line-height: 25px;
+        padding-left: 15px;
+        border-bottom: 2px solid gray;
+      }
+      table th {
+        /* background-color: #1b1912; */
+        background-color: #020a0c;
+        color: #ffffff;
+      }
+      .tboyd {
+        display: flex;
+        flex-direction: column;
+      }
+      .heading {
+        width: 200px;
+      }
+      .wrapper {
+        width: 90%;
+      }
+      .mainHeading {
+        font-size: larger;
+        font-weight: bold;
+      }
+      .mainDiv {
+        display: flex;
+        justify-content: space-between;
+      }
+      .allowance-wrapper {
+        width: 100%;
+        margin: 0px 15px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .row > td {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+      }
+      .companyName {
+        height: 100px;
+        background-color: #000709;
+        color: #ffffff;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        width: 100%;
+      }
+      .netPay {
+        width: 100%;
+        background-color: #020a0c;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+        margin-top: 2%;
+      }
+    </style>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <table border="1" class="">
+        <tr class="companyName">
+          <td
+            colspan="4"
+            class="flex justify-center items-center text-xl text-gray-200 bg-[#1b1912] h-[100px]"
+          >
+            HRMS Limited
+          </td>
+        </tr>
+        <tbody class="my-5 flex flex-col gap px-10 tbody">
+          <tr className="border-b-2">
+            <th
+              scope="col"
+              class="w-32 text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+            >
+              Name:
+            </th>
+            <td class="text-left pl-5">ZAID</td>
+          </tr>
+          <tr className="border-b-2">
+            <th
+              scope="col"
+              class="w-32 text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+            >
+              DOB:
+            </th>
+            <td className="text-left pl-5">15/2/2002</td>
+          </tr>
+          <tr className="border-b-2">
+            <th
+              scope="col"
+              class="w-32 text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+            >
+              Location:
+            </th>
+            <td className="text-left pl-5">Lahore</td>
+          </tr>
+          <tr className="border-b-2">
+            <th
+              scope="col"
+              class="w-32 text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+            >
+              Department:
+            </th>
+            <td className="text-left pl-5">Development</td>
+          </tr>
+          <tr className="border-b-2">
+            <th
+              scope="col"
+              class="w-32 text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+            >
+              Working Days:
+            </th>
+            <td className="text-left pl-5">25</td>
+          </tr>
+          <tr className="border-b-2">
+            <th
+              scope="col"
+              class="w-32 text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+            >
+              Designation:
+            </th>
+            <td className="text-left pl-5">Software Engineer</td>
+          </tr>
+          <tr className="border-b-2">
+            <th
+              scope="col"
+              class="w-32 text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+            >
+              Basic Pay:
+            </th>
+            <td className="text-left pl-5">45000</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Allowances -->
+      <div class="flex justify-between mainDiv">
+        <div class="flex flex-col w-full mx-2 allowance-wrapper">
+          <h1 class="text-center font-bold mainHeading">Allowances</h1>
+          <table border="" class="flex flex-col border-0">
+            <tbody class="flex flex-col gap px-10 w-full">
+              <tr class="my-[2px] flex justify-between px-10 row">
+                <th
+                  scope="col"
+                  class="w-[200px] text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+                >
+                  House Allowances:
+                </th>
+                <td class="text-left pl-5 flex items-center">4000</td>
+              </tr>
+              <tr class="my-[2px] flex justify-between px-10 row">
+                <th
+                  scope="col"
+                  class="w-[200px] text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+                >
+                  Petrol Allowances:
+                </th>
+                <td class="text-left pl-5 flex items-center">4000</td>
+              </tr>
+              <tr class="my-[2px] flex justify-between px-10 row">
+                <th
+                  scope="col"
+                  class="w-[200px] text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+                >
+                  Medical Allowances:
+                </th>
+                <td class="text-left pl-5 flex items-center">4000</td>
+              </tr>
+              <tr class="my-[2px] flex justify-between px-10 bg-[#1b1912]">
+                <th
+                  scope="col"
+                  class="w-[200px] text-center text-sm font-medium text-gray-200 px-6 py-4 font-bold"
+                >
+                  Gross Pay:
+                </th>
+                <td class="text-left pl-5 flex items-center text-gray-200">
+                  14000
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex flex-col w-full mx-2 allowance-wrapper">
+          <h1 class="text-center font-bold mainHeading">Deductions</h1>
+          <table border="" class="flex flex-col border-0">
+            <tbody class="flex flex-col gap px-10 w-full">
+              <tr class="my-[2px] flex justify-between px-10 row">
+                <th
+                  scope="col"
+                  class="w-[200px] text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+                >
+                  House Allowances:
+                </th>
+                <td class="text-left pl-5 flex items-center">4000</td>
+              </tr>
+              <tr class="my-[2px] flex justify-between px-10 row">
+                <th
+                  scope="col"
+                  class="w-[200px] text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+                >
+                  Petrol Allowances:
+                </th>
+                <td class="text-left pl-5 flex items-center">4000</td>
+              </tr>
+              <tr class="my-[2px] flex justify-between px-10 row">
+                <th
+                  scope="col"
+                  class="w-[200px] text-center text-sm font-medium text-gray-200 px-6 py-4 border-r font-bold heading"
+                >
+                  Medical Allowances:
+                </th>
+                <td class="text-left pl-5 flex items-center">4000</td>
+              </tr>
+              <tr class="my-[2px] flex justify-between px-10 bg-[#1b1912]">
+                <th
+                  scope="col"
+                  class="w-[200px] text-center text-sm font-medium text-gray-200 px-6 py-4 font-bold"
+                >
+                  Gross Deductions:
+                </th>
+                <td class="text-left pl-5 flex items-center text-gray-200">
+                  14000
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        class="bg-[#1b1912] mx-4 text-gray-200 p-5 flex justify-between netPay"
+        style="width: 100%;
+        background-color: #020a0c;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+        margin-top: 2%;"
+        
+      >
+        <h3><strong>NET PAY:</strong></h3>
+        <h3>
+          <strong>Rs.</strong><strong><span> </span>62000</strong>
+        </h3>
+      </div>
+    </div>
+  </body>
+</html>
